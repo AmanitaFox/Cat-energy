@@ -12,8 +12,14 @@
 <body class="page__body">
   <header class="main-header">
     <a class="main-header__logo logo" href="index.html">
-      <img class="logo__image logo__image--picture" src="#" width="33" height="38" alt="Cat-energy-picture">
-      <img class="logo__image logo__image--text" src="#" width="101" height="18" alt="Cat-energy">
+      <picture>
+        <source width="70" height="59" type="image/png" media="(min-width: 1440px)" srcset="images/logo-pic-desktop@1x.png, images/logo-pic-desktop@2x.png 2x">
+        <source width="60" height="50" type="image/png" media="(min-width: 768px)" srcset="images/logo-pic-tablet@1x.png, images/logo-pic-tablet@2x.png 2x">
+        <img class="logo__image logo__image--picture" src="images/logo-pic-mobile@1x.png" srcset="images/logo-pic-mobile@2x.png 2x" width="33" height="38" alt="Cat-energy-picture">
+      </picture>
+      <picture>
+        <img class="logo__image logo__image--text" src="images/logo-text-mobile@1x.png" srcset="images/logo-text-mobile@2x.png 2x" width="101" height="18" alt="Cat-energy">
+      </picture>
     </a>
     <nav class="main-nav">
       <button class="main-nav__toggle button-burger" type="button"><span class="visually-hidden">Открыть меню</span></button>
@@ -51,6 +57,11 @@
         <p class="promo__intro">
           Занялся собой? Займись котом!
         </p>
+        <picture>
+          <source width="552" height="499" type="image/png" media="(min-width: 1440px)" srcset="images/promo-can-desktop@1x.png, images/promo-can-desktop@2x.png 2x">
+          <source width="709" height="609" type="image/png" media="(min-width: 768px)" srcset="images/promo-can-tablet@1x.png, images/promo-can-tablet@2x.png 2x">
+          <img class="promo__picture" src="images/promo-can-mobile@1x.png" srcset="images/promo-can-mobile@2x.png 2x" width="280" height="270" alt="Promo Cat-energy">
+        </picture>
         <a class="promo__choose-program button" href="#">
           Подобрать программу
         </a>
@@ -62,6 +73,11 @@
       <div class="goals__wrapper">
         <ul class="goals__list">
           <li class="goals__item goals__item--slim">
+            <picture>
+              <source width="100" height="106" type="image/png" media="(min-width: 1440px)" srcset="images/goal-slim-cat-desktop@1x.png, images/goal-slim-cat-desktop@2x.png 2x">
+              <source width="200" height="211" type="image/png" media="(min-width: 768px)" srcset="images/goal-slim-cat-tablet@1x.png, images/goal-slim-cat-tablet@2x.png 2x">
+              <img class="goals__picture" src="images/goal-slim-cat-mobile@1x.png" srcset="images/goal-slim-cat-mobile@2x.png 2x" width="50" height="53" alt="Slim cat">
+            </picture>
             <h3 class="goals__title">Похудение</h3>
             <p class="goals__description">
               Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.
@@ -71,6 +87,11 @@
             </a>
           </li>
           <li class="goals__item goals__item--strong">
+            <picture>
+              <source width="134" height="100" type="image/png" media="(min-width: 1440px)" srcset="images/goal-strong-cat-desktop@1x.png, images/goal-strong-cat-desktop@2x.png 2x">
+              <source width="268" height="200" type="image/png" media="(min-width: 768px)" srcset="images/goal-strong-cat-tablet@1x.png, images/goal-strong-cat-tablet@2x.png 2x">
+              <img class="goals__picture" src="images/goal-strong-cat-mobile@1x.png" srcset="images/goal-strong-cat-mobile@2x.png 2x" width="67" height="50" alt="Strong cat">
+            </picture>
             <h3 class="goals__title">Набор массы</h3>
             <p class="goals__description">
               Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!
@@ -88,6 +109,10 @@
         <h2 class="special__title">Как это работает</h2>
         <ul class="special__list">
           <li class="special__item special__item--healthy">
+            <picture>
+              <source width="80" height="80" type="image/png" media="(min-width: 768px)" srcset="images/healthy-icon-tablet-and-desk@1x.png, images/healthy-icon-tablet-and-desk@2x.png 2x">
+              <img class="special__picture" src="images/healthy-icon-mobile@1x.png" srcset="images/healthy-icon-mobile@2x.png 2x" width="60" height="60" alt="Healthy icon">
+            </picture>
             <p class="special__description">
               Функциональное питание
               содержит только полезные
@@ -95,6 +120,10 @@
             </p>
           </li>
           <li class="special__item special__item--powder">
+            <picture>
+              <source width="80" height="80" type="image/png" media="(min-width: 768px)" srcset="images/powder-icon-tablet-and-desk@1x.png, images/powder-icon-tablet-and-desk@2x.png 2x">
+              <img class="special__picture" src="images/powder-icon-mobile@1x.png" srcset="images/powder-icon-mobile@2x.png 2x" width="60" height="60" alt="Powder icon">
+            </picture>
             <p class="special__description">
               Выпускается в виде порошка,
               который нужно лишь залить
@@ -102,6 +131,10 @@
             </p>
           </li>
           <li class="special__item special__item--meal">
+            <picture>
+              <source width="80" height="80" type="image/png" media="(min-width: 768px)" srcset="images/meal-icon-tablet-and-desk@1x.png, images/meal-icon-tablet-and-desk@2x.png 2x">
+              <img class="special__picture" src="images/meal-icon-mobile@1x.png" srcset="images/meal-icon-mobile@2x.png 2x" width="60" height="60" alt="Powder icon">
+            </picture>
             <p class="special__description">
               Замените один-два приема
               обычной еды на наше
@@ -109,6 +142,10 @@
             </p>
           </li>
           <li class="special__item special__item--time">
+            <picture>
+              <source width="80" height="80" type="image/png" media="(min-width: 768px)" srcset="images/time-icon-tablet-and-desk@1x.png, images/time-icon-tablet-and-desk@2x.png 2x">
+              <img class="special__picture" src="images/time-icon-mobile@1x.png" srcset="images/time-icon-mobile@2x.png 2x" width="60" height="60" alt="Powder icon">
+            </picture>
             <p class="special__description">
               Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!
             </p>
