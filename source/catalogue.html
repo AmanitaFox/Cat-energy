@@ -11,25 +11,33 @@
 
 <body class="page__body">
   <header class="main-header">
-    <a class="main-header__logo" href="index.html">
-      <img src="#" width="33" height="38" alt="Cat-energy-picture">
-      <img src="#" width="101" height="18" alt="Cat-energy">
+    <a class="main-header__logo logo" href="index.html">
+      <picture>
+        <source width="70" height="59" type="image/png" media="(min-width: 1440px)" srcset="images/logo-pic-desktop@1x.png, images/logo-pic-desktop@2x.png 2x">
+        <source width="60" height="50" type="image/png" media="(min-width: 768px)" srcset="images/logo-pic-tablet@1x.png, images/logo-pic-tablet@2x.png 2x">
+        <img class="logo__image logo__image--picture" src="images/logo-pic-mobile@1x.png" srcset="images/logo-pic-mobile@2x.png 2x" width="33" height="38" alt="Cat-energy-picture">
+      </picture>
+      <picture>
+        <source width="118" height="21" type="image/png" media="(min-width: 1440px)" srcset="images/logo-text-desktop@1x.png, images/logo-text-desktop@2x.png 2x">
+        <source width="101" height="18" type="image/png" media="(min-width: 768px)" srcset="images/logo-text-tablet@1x.png, images/logo-text-tablet@2x.png 2x">
+        <img class="logo__image logo__image--text" src="images/logo-text-mobile@1x.png" srcset="images/logo-text-mobile@2x.png 2x" width="101" height="18" alt="Cat-energy">
+      </picture>
     </a>
     <nav class="main-nav">
-      <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+      <button class="main-nav__toggle button-burger" type="button"><span class="visually-hidden">Открыть меню</span></button>
       <div class="main-nav__wrapper">
-        <ul class="main-nav__list">
-          <li class="main-nav__item main-nav__item--item-active">
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item site-list__item--item-active">
             <a href="index.html">
               Главная
             </a>
           </li>
-          <li class="main-nav__item">
-            <a href="#">
+          <li class="site-list__item">
+            <a href="catalogue.html">
               Каталог продукции
             </a>
           </li>
-          <li class="main-nav__item">
+          <li class="site-list__item">
             <a href="#">
               Подбор программы
             </a>
@@ -270,9 +278,9 @@
             <button class="catalogue__item__button button" type="button">Заказать</button>
           </li>
           <li class="catalogue__item card">
-            <b class="more-cards__title">Показать еще 100500 товаров</b>
-            <p class="more-cards__description">На самом деле вкусов гораздо больше!</p>
-            <button class="more-cards__button button" type="button">Показать все</button>
+            <b class="card__name">Показать еще 100500 товаров</b>
+            <p class="card__description">На самом деле вкусов гораздо больше!</p>
+            <button class="catalogue__item__button button" type="button">Показать все</button>
           </li>
         </ul>
       </div>
@@ -281,7 +289,7 @@
 
     <section class="related-products">
       <div class="related-products__wrapper">
-        <h2>
+        <h2 class="related-products__title">
           Дополнительные товары
         </h2>
         <ul class="related-products__list">
@@ -334,7 +342,7 @@
         <p class="subscription__description">Подпишитесь на наши новости и не пропустите ни одного предложения!</p>
         <form class="subscription__form" method="get" action="https://echo.htmlacademy.ru">
           <label class="visually-hidden" for="subscribe">Введите свой e-mail:</label>
-          <input type="email" name="subscribe" id="subscribe" placeholder="кuklachev@gmail.com" required />
+          <input class="subscription__input" type="email" name="subscribe" id="subscribe" placeholder="кuklachev@gmail.com" required />
           <button class="subscription__button button" type="button">Подписаться</button>
         </form>
       </div>
